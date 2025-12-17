@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Employees â€” Salary Management System</title>
+<link rel='stylesheet' href='style.css'>
+<script src='script.js' defer></script>
+</head>
+<body>
+<header><div class='brand'>Salary Management System </div></header>
+<nav>
+  <a href='index.html'>Home</a>
+  <a href='employees.html' class='active'>Employees</a>
+  <a href='departments.html'>Transactions</a>
+  <a href='salary.html'>Salaries</a>
+  <a href='leaves.html'>Leaves</a>
+</nav>
+<main class='container'>
+  <h1>Employees</h1>
+
+  <div class='controls'>
+    <button id='empSaveBtn'> Save Data</button>
+    <button id='empLoadBtn'> Load Data</button>
+    <button id='empClearBtn'>Reset In-Memory</button>
+  </div>
+
+  <section class='card form-card'>
+    <h2>Add / Edit Employee</h2>
+    <form id='employeeForm'>
+      <input id='empName' placeholder='Name' required>
+      <input id='empDesig' placeholder='Designation'>
+      <input id='empDept' placeholder='Department'>
+      <input id='empSalary' placeholder='Salary' type='number'>
+      <button type='submit'>Save Row</button>
+    </form>
+  </section>
+
+  <section class='card'>
+    <h2>Employee Records</h2>
+    <div id='employeesTableArea'></div>
+  </section>
+</main>
+</body>
+</html>

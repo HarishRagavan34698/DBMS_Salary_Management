@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Salaries â€” Salary Management System</title>
+<link rel='stylesheet' href='style.css'>
+<script src='script.js' defer></script>
+</head>
+<body>
+<header><div class='brand'>Salary Management System </div></header>
+<nav>
+  <a href='index.html'>Home</a>
+  <a href='employees.html'>Employees</a>
+  <a href='departments.html'>Transactions</a>
+  <a href='salary.html' class='active'>Salaries</a>
+  <a href='leaves.html'>Leaves</a>
+</nav>
+<main class='container'>
+  <h1>Salaries</h1>
+
+  <div class='controls'>
+    <button id='salSaveBtn'> Save Data</button>
+    <button id='salLoadBtn'> Load Data</button>
+    <button id='salClearBtn'>Reset In-Memory</button>
+  </div>
+
+  <section class='card form-card'>
+    <h2>Add / Edit Salary</h2>
+    <form id='salaryForm'>
+      <input id='salEmp' placeholder='Employee Name' required>
+      <input id='salAmount' placeholder='Amount' type='number'>
+      <input id='salDate' type='date'>
+      <button type='submit'>Save Row</button>
+    </form>
+  </section>
+
+  <section class='card'>
+    <h2>Salary Records</h2>
+    <div id='salaryTableArea'></div>
+  </section>
+</main>
+</body>
+</html>

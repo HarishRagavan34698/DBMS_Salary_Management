@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Departments â€” Salary Management System</title>
+<link rel='stylesheet' href='style.css'>
+<script src='script.js' defer></script>
+</head>
+<body>
+<header><div class='brand'>Salary Management System </div></header>
+<nav>
+  <a href='index.html'>Home</a>
+  <a href='employees.html'>Employees</a>
+  <a href='departments.html' class='active'>Transactions</a>
+  <a href='salary.html'>Salaries</a>
+  <a href='leaves.html'>Leaves</a>
+</nav>
+<main class='container'>
+  <h1>Transactions</h1>
+
+  <div class='controls'>
+    <button id='deptSaveBtn'> Save Data</button>
+    <button id='deptLoadBtn'> Load Data</button>
+    <button id='deptClearBtn'>Reset In-Memory</button>
+  </div>
+
+  <section class='card form-card'>
+    <h2>Add / Edit Department</h2>
+    <form id='departmentForm'>
+      <input id='deptName' placeholder='Department Name' required>
+      <input id='deptHead' placeholder='Head'>
+      <button type='submit'>Save Row</button>
+    </form>
+  </section>
+
+  <section class='card'>
+    <h2>Department Records</h2>
+    <div id='departmentsTableArea'></div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Leaves â€” Salary Management System</title>
+<link rel='stylesheet' href='style.css'>
+<script src='script.js' defer></script>
+</head>
+<body>
+<header><div class='brand'>Salary Management System </div></header>
+<nav>
+  <a href='index.html'>Home</a>
+  <a href='employees.html'>Employees</a>
+  <a href='departments.html'>Transactions</a>
+  <a href='salary.html'>Salaries</a>
+  <a href='leaves.html' class='active'>Leaves</a>
+</nav>
+<main class='container'>
+  <h1>Leaves</h1>
+
+  <div class='controls'>
+    <button id='leaveSaveBtn'>Save Data</button>
+    <button id='leaveLoadBtn'> Load Data</button>
+    <button id='leaveClearBtn'>Reset In-Memory</button>
+  </div>
+
+  <section class='card form-card'>
+    <h2>Add / Edit Leave</h2>
+    <form id='leaveForm'>
+      <input id='leaveEmp' placeholder='Employee Name' required>
+      <input id='leaveFrom' type='date' placeholder='From'>
+      <input id='leaveTo' type='date' placeholder='To'>
+      <input id='leaveReason' placeholder='Reason'>
+      <button type='submit'>Save Row</button>
+    </form>
+  </section>
+
+  <section class='card'>
+    <h2>Leave Records</h2>
+    <div id='leaveTableArea'></div>
+  </section>
+</main>
+</body>
+</html>

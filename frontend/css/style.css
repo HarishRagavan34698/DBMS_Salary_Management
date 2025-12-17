@@ -1,0 +1,24 @@
+:root{
+  --bg:#071129;
+  --card:#071a2a;
+  --accent:#00bfa5;
+  --text:#e6eef9;
+  --muted:#9fb4c9;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI, sans-serif;background:linear-gradient(180deg,#020617 0%,var(--bg) 100%);color:var(--text)}
+header{padding:14px 18px;background:linear-gradient(90deg,#00202b,#004d52);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.brand{font-weight:700}
+nav{display:flex;gap:8px;padding:10px 18px;background:transparent}
+nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:6px}
+nav a.active{background:rgba(255,255,255,0.03);color:var(--text)}
+.container{max-width:1000px;margin:20px auto;padding:0 16px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:10px;margin-bottom:12px}
+.form-card input{margin:6px 6px 6px 0;padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.form-card button{margin-left:6px;padding:8px 10px;border-radius:6px;border:none;background:var(--accent);color:#022}
+.controls{margin:10px 0}
+.controls button{margin-right:8px;padding:8px 10px;border-radius:6px;border:none;background:rgba(255,255,255,0.03);color:var(--text);cursor:pointer}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+tr:hover{background:rgba(255,255,255,0.02)}
+small{color:var(--muted)}
